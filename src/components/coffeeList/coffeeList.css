@@ -1,0 +1,27 @@
+.coffeeList {
+  display: flex;
+  width: 500px;
+  background-color: #faf4ee;
+  flex-direction: column;
+  padding: 0 26px 0 32px;
+  list-style: none;
+  font-family: "Sen", sans-serif;
+  font-size: 1.1rem;
+}
+.coffeeList > li {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+li > :last-child {
+  align-self: stretch;
+  flex-grow: 1;
+}
+li > :first-child {
+  flex-grow: 1;
+}
+li text {
+  background-color: black;
+}
