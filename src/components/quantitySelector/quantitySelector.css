@@ -1,0 +1,38 @@
+.quantitySelector {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 198px;
+  text-align: center;
+  font-family: Courier, monospace;
+  font-size: 1.1rem;
+}
+
+.selector {
+  color: white;
+  background: #cf9775;
+  border: none;
+  padding: 13px 10px;
+  width: 33%;
+  font-family: Courier, monospace;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: stretch;
+}
+
+.selector > svg {
+  fill: white;
+}
+
+.decrease {
+  border-radius: 100px 0 0 100px;
+}
+.increase {
+  border-radius: 0 100px 100px 0;
+}
+
+.input {
+  align-self: center;
+  margin: 0;
+  width: 33%;
+}
