@@ -1,7 +1,6 @@
 .quantitySelector {
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
   width: 198px;
   text-align: center;
   font-family: "Sen", sans-serif;
@@ -17,7 +16,8 @@
   font-family: Courier, monospace;
   font-size: 1.8rem;
   display: flex;
-  align-items: stretch;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .selector > svg {
