@@ -1,0 +1,14 @@
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../../Images/bg.png);
+  font-size: 1.8rem;
+}
+
+.background > svg {
+  width: 30vw;
+  height: auto;
+}
