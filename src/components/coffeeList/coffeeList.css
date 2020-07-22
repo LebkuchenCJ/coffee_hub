@@ -5,7 +5,6 @@
   flex-direction: column;
   padding: 0 26px 0 32px;
   list-style: none;
-  font-family: "Sen", sans-serif;
   font-size: 1.3rem;
 }
 .coffeeList > li {
@@ -22,5 +21,5 @@ li > :first-child {
   width: 56px;
 }
 li > p {
-  width: 210px;
+  width: 220px;
 }
