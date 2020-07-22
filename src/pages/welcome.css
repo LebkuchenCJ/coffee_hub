@@ -5,10 +5,21 @@
   width: 100vw;
   height: 100vh;
   background-image: url(../../Images/bg.png);
-  font-size: 1.8rem;
 }
 
 .background > svg {
   width: 30vw;
   height: auto;
+  animation: logoFade 2s;
+}
+
+@keyframes logoFade {
+  from {
+    width: 1vw;
+    opacity: 0;
+    top: 1vh;
+  }
+  to {
+    opacity: 1;
+  }
 }
