@@ -2,6 +2,7 @@
   width: 100vw;
   height: 90px;
   padding-left: 0 5px;
+  box-shadow: 0 2px 88px #fde9fd;
   background-color: #fff;
   border-radius: 46px 46px 0 0;
   display: flex;

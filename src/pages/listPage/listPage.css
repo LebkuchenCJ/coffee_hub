@@ -1,0 +1,16 @@
+html {
+  background-color: #faf4ee;
+}
+.slogan {
+  padding: 0 24px;
+  font-family: "Sen", sans-serif;
+}
+
+.slogan > h1 {
+  font-weight: lighter;
+}
+
+.slogan > h1 > span {
+  color: #b98875;
+  font-weight: bold;
+}
