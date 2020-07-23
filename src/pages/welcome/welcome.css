@@ -4,7 +4,7 @@
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background-image: url(../../Images/bg.png);
+  background-image: url(../../../Images/bg.png);
 }
 
 .background > svg {
