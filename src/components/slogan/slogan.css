@@ -1,9 +1,11 @@
 .slogan {
   font-family: "Sen", sans-serif;
+  padding-top: 5px;
 }
 
 .slogan > h1 {
   font-weight: lighter;
+  margin: 0;
 }
 
 .slogan > h1 > span {
