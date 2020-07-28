@@ -1,11 +1,18 @@
 import { useEffect } from "@storybook/client-api";
 
 import "./quantitySelector.css";
-import quantitySelector from "./quantitySelector.html";
+import { quantitySelector } from "./quantitySelector";
+/* import quantitySelector from "./quantitySelector.html"; */
 
 export default { title: "Quantity Selector" };
 
-export const simpleSelector = () => {
+export const quantSel = () => {
+  let button = quantitySelector();
+
+  return button;
+};
+
+/* export const simpleSelector = () => {
   useEffect(() => {
     const minus = document.querySelector(".decrease");
     const plus = document.querySelector(".increase");
@@ -32,3 +39,4 @@ export const simpleSelector = () => {
 
   return quantitySelector;
 };
+ */

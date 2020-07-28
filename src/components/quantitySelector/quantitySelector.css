@@ -7,7 +7,8 @@
   font-size: 1.1rem;
 }
 
-.selector {
+.increase,
+.decrease {
   color: white;
   background: #cf9775;
   border: none;
@@ -19,7 +20,8 @@
   align-items: center;
 }
 
-.selector > svg {
+.increase > svg,
+.decrease > svg {
   fill: white;
 }
 
