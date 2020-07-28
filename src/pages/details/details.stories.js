@@ -6,7 +6,6 @@ export default {
 
 export const basic = () => {
   useEffect(() => {
-    /* alert("Button"); */
     const button = document.querySelector(".btn");
     button.addEventListener("click", () => {
       button.innerHTML = "Moin";
