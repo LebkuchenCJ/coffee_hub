@@ -1,0 +1,15 @@
+.sugarCube-wrapper > :first-child {
+  color: #2d140d;
+  font-size: 20px;
+  line-height: 24px;
+}
+.sugarCube-wrapper span {
+  opacity: 0.3;
+}
+
+.sugarCube_selections {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
