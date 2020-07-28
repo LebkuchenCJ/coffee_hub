@@ -9,7 +9,7 @@ export function addButton(buttonText) {
   });
   button.addEventListener("click", () => {
     let anotherButton = addButton(buttonText);
-    button.parentElement.remove(anotherButton);
+    button.nextSibling.remove(anotherButton);
   });
   return button;
 }
