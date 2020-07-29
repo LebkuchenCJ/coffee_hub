@@ -1,6 +1,18 @@
 import "./button.css";
-import button from "./button.html";
+import { addButton } from "./button";
 
+/* import button from "./button.html";
+ */
 export default { title: "Button" };
 
-export const addToCart = () => button;
+export const addToCart = () => {
+  let button = addButton("Hello there");
+
+  return button;
+};
+
+export const whatsUp = () => {
+  let button = addButton("Whats Up, Doc?");
+
+  return button;
+};
