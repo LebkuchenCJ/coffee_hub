@@ -48,3 +48,7 @@
 .details__form input {
   display: block;
 }
+
+.details__form > :last-child {
+  margin: 0 auto;
+}

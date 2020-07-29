@@ -35,7 +35,7 @@ export const basic = () => {
   coffeeSize.append(sizeSelector());
 
   const sugarSize = createElement("label", { innerText: "Sugar (in Cubes)" });
-  const sugarInput = createElement("input");
+  const sugarInput = createElement("input", { name: "sugar" });
   sugarSize.append(sugarInput);
 
   main.append(form);
@@ -45,6 +45,17 @@ export const basic = () => {
   form.append(coffeeSize);
   form.append(sugarSize);
   form.append(addButton("Add to Cart"));
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(form);
+
+    for (let [name, value] of formData) {
+      console.log(`${name} = ${value}`);
+    }
+    alert("Coffee submitted. See console for values");
+  });
 
   return main;
 };

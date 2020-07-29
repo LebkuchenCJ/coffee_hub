@@ -7,6 +7,7 @@ export function quantitySelector() {
 
   const decrease = createElement("button", {
     className: "decrease",
+    tpye: "button",
     innerHTML: `<svg
     xmlns="http://www.w3.org/2000/svg"
     width="11"
@@ -17,13 +18,18 @@ export function quantitySelector() {
   </svg>`,
   });
 
-  const counter = createElement("p", {
+  const counter = createElement("input", {
     className: "counter",
-    innerHTML: "1",
+    value: 1,
+    min: 1,
+    max: 9,
+    tpye: "number",
+    name: "quantity",
   });
 
   const increase = createElement("button", {
     className: "increase",
+    tpye: "button",
     innerHTML: `<svg
     xmlns="http://www.w3.org/2000/svg"
     width="10.763"
@@ -44,7 +50,7 @@ export function quantitySelector() {
   let count = 1;
 
   decrease.addEventListener("click", () => {
-    counter.innerHTML = count;
+    counter.value = count;
     count--;
     if (count < 0) {
       count = 0;
@@ -54,7 +60,7 @@ export function quantitySelector() {
 
   increase.addEventListener("click", () => {
     count++;
-    counter.innerHTML = count;
+    counter.value = count;
     if (count === 1) {
       decrease.disabled = false;
     }
