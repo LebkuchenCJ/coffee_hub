@@ -3,9 +3,9 @@ export function addButton(buttonText) {
   button.classList.add("btn");
   const text = document.createTextNode(buttonText);
   button.append(text);
-  button.addEventListener("mouseover", () => {
+  /* button.addEventListener("mouseover", () => {
     alert("Hey, buy some more");
-  });
+  }); */
 
   /* button.addEventListener("mouseover", () => {
     let anotherButton = addButton(buttonText);
