@@ -7,7 +7,7 @@ export function quantitySelector() {
 
   const decrease = createElement("button", {
     className: "decrease",
-    tpye: "button",
+    type: "button",
     innerHTML: `<svg
     xmlns="http://www.w3.org/2000/svg"
     width="11"
@@ -23,13 +23,13 @@ export function quantitySelector() {
     value: 1,
     min: 1,
     max: 9,
-    tpye: "number",
+    type: "number",
     name: "quantity",
   });
 
   const increase = createElement("button", {
     className: "increase",
-    tpye: "button",
+    type: "button",
     innerHTML: `<svg
     xmlns="http://www.w3.org/2000/svg"
     width="10.763"

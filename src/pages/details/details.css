@@ -4,7 +4,6 @@
   flex-direction: column;
   width: 100vw;
   padding: 24px;
-  background-color: ;
 }
 
 .details > * {
@@ -49,6 +48,10 @@
   display: block;
 }
 
+/* .details__form input:first-of-type {
+  display: none;
+}
+ */
 .details__form > :last-child {
   margin: 0 auto;
 }

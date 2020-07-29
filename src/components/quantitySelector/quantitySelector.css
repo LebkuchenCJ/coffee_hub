@@ -42,6 +42,11 @@
   border: none;
   text-align: center;
 }
+
+.counter::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 .increase:disabled,
 .decrease:disabled {
   background-color: gray;

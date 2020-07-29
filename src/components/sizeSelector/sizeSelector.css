@@ -1,5 +1,5 @@
 .selector input {
-  display: none;
+  display: none !important;
 }
 
 .selector img {
