@@ -26,9 +26,9 @@ export const quantSelec = () => {
   main.append(br);
 
   let addToCart = addButton("Add to Cart");
-  /* let para = document.getElementsByClassName("counter");
-  addToCart.addEventListener("mouseover", () => {
-    if (para < 1) {
+  /*   let para = document.getElementsByClassName("counter");
+  addToCart.addEventListener("click", () => {
+    if (para.innerText === "1") {
       alert("Buy some more");
     }
   }); */

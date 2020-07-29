@@ -41,7 +41,7 @@ export function quantitySelector() {
   quantitySelector.append(counter);
   quantitySelector.append(increase);
 
-  let count = Number(1);
+  let count = 1;
 
   decrease.addEventListener("click", () => {
     counter.innerHTML = count;
