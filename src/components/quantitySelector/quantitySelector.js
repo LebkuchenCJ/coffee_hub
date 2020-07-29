@@ -43,9 +43,21 @@ export function quantitySelector() {
   </svg>`,
   });
 
+  /*  const total = createElement("span", {
+    className: "total",
+  });
+
+  const priceCoffee = createElement("input", {
+    type: "number",
+    value: "2.8",
+    name: "Price",
+  });
+ */
   quantitySelector.prepend(decrease);
   quantitySelector.append(counter);
   quantitySelector.append(increase);
+  /*   quantitySelector.append(priceCoffee);
+  quantitySelector.append(total); */
 
   let count = 1;
 
@@ -65,6 +77,8 @@ export function quantitySelector() {
       decrease.disabled = false;
     }
   });
+  /* 
+  total.innerHTML = counter * priceCoffee; */
 
   return quantitySelector;
 }
