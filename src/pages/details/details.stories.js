@@ -1,38 +1,49 @@
-import { useEffect } from "@storybook/client-api";
+import "./details.css";
 import { quantitySelector } from "../../components/quantitySelector/quantitySelector";
 import { addButton } from "../../components/button/button";
+import { createElement } from "../../element";
+import macchiatoSrc from "../../../Images/macchiato.svg";
 
 export default {
   title: "Pages/Details",
 };
 
-/* export const basic = () => {
-  useEffect(() => {
-    const button = document.querySelector(".btn");
-    button.addEventListener("click", () => {
-      button.innerHTML = "Moin";
-    });
+export const basic = () => {
+  const main = createElement("main", { className: "details" });
+  const header = createElement("header", { className: "details__header" });
+  main.append(header);
+
+  const titel = createElement("h2", { innerText: "Macchiato" });
+  const img = createElement("img", {
+    src: macchiatoSrc,
+    alt: "Macchiato Cub",
   });
+  header.append(titel);
+  titel.after(img);
 
-  return '<button class="btn">Hallo Fische</button>';
-}; */
+  const form = createElement("form", { className: "details__form" });
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+  });
+  const coffeeName = createElement("div", { innerText: "Macchiato" });
+  const price = createElement("div", { innerText: "$2.80" });
+  coffeeName.append(price);
 
-export const quantSelec = () => {
-  const main = document.createElement("main");
+  const coffeeSize = createElement("label", { innerText: "Size" });
+  const coffeeInput = createElement("input");
+  coffeeSize.append(coffeeInput);
 
-  main.append(quantitySelector());
+  const sugarSize = createElement("label", { innerText: "Sugar (in Cubes)" });
+  const sugarInput = createElement("input");
+  sugarSize.append(sugarInput);
 
-  const br = document.createElement("br");
-  main.append(br);
+  main.append(form);
 
-  let addToCart = addButton("Add to Cart");
-  /*   let para = document.getElementsByClassName("counter");
-  addToCart.addEventListener("click", () => {
-    if (para.innerText === "1") {
-      alert("Buy some more");
-    }
-  }); */
-  main.append(addToCart);
+  form.append(coffeeName);
+  form.append(quantitySelector());
+  form.append(coffeeSize);
+  form.append(sugarSize);
+  form.append(addButton("Add to Cart"));
 
   return main;
 };
