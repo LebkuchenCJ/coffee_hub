@@ -3,6 +3,7 @@ import { quantitySelector } from "../../components/quantitySelector/quantitySele
 import { addButton } from "../../components/button/button";
 import { createElement } from "../../element";
 import macchiatoSrc from "../../../Images/macchiato.svg";
+import { sizeSelector } from "../../components/sizeSelector/sizeSelector";
 
 export default {
   title: "Pages/Details",
@@ -30,8 +31,8 @@ export const basic = () => {
   coffeeName.append(price);
 
   const coffeeSize = createElement("label", { innerText: "Size" });
-  const coffeeInput = createElement("input");
-  coffeeSize.append(coffeeInput);
+  /* const coffeeInput = createElement("input"); */
+  coffeeSize.append(sizeSelector());
 
   const sugarSize = createElement("label", { innerText: "Sugar (in Cubes)" });
   const sugarInput = createElement("input");
