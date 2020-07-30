@@ -1,0 +1,23 @@
+.selector input {
+  display: none !important;
+}
+
+.selector img {
+  filter: opacity(0.2);
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.selector input:checked ~ img {
+  filter: none;
+}
+
+.smallCup {
+  height: 30px;
+}
+.mediumCup {
+  height: 45px;
+}
+.largeCup {
+  height: 60px;
+}

@@ -1,8 +1,9 @@
-/* import { useEffect } from "@storybook/client-api";
- */
 import "./sugarSelector.css";
-import sugarSelector from "./sugarSelector.html";
-
+import { sugarSelector } from "./sugarSelector";
 export default { title: "Sugar Selector" };
 
-export const sugarCubes = () => sugarSelector;
+export const sugarCubes = () => {
+  const select = sugarSelector();
+
+  return select;
+};

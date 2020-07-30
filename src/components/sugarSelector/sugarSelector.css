@@ -1,15 +1,35 @@
-.sugarCube-wrapper > :first-child {
-  color: #2d140d;
-  font-size: 20px;
-  line-height: 24px;
-}
-.sugarCube-wrapper span {
-  opacity: 0.3;
+.sugarSelector {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 60vw;
 }
 
-.sugarCube_selections {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: baseline;
+.sugarSelector input {
+  display: none !important;
+}
+
+.sugarSelector img {
+  filter: opacity(0.2);
+  cursor: pointer;
+}
+
+.sugarSelector input:checked ~ img {
+  filter: none;
+}
+
+.cubes_0 {
+  height: 19px;
+}
+
+.cubes_1 {
+  height: 17px;
+}
+
+.cubes_2 {
+  height: 17px;
+}
+
+.cubes_3 {
+  height: 40px;
 }

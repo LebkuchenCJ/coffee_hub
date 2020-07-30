@@ -7,6 +7,7 @@ export function quantitySelector() {
 
   const decrease = createElement("button", {
     className: "decrease",
+    type: "button",
     innerHTML: `<svg
     xmlns="http://www.w3.org/2000/svg"
     width="11"
@@ -17,13 +18,18 @@ export function quantitySelector() {
   </svg>`,
   });
 
-  const counter = createElement("p", {
+  const counter = createElement("input", {
     className: "counter",
-    innerHTML: "1",
+    value: 1,
+    min: 1,
+    max: 9,
+    type: "number",
+    name: "quantity",
   });
 
   const increase = createElement("button", {
     className: "increase",
+    type: "button",
     innerHTML: `<svg
     xmlns="http://www.w3.org/2000/svg"
     width="10.763"
@@ -37,14 +43,26 @@ export function quantitySelector() {
   </svg>`,
   });
 
+  /*  const total = createElement("span", {
+    className: "total",
+  });
+
+  const priceCoffee = createElement("input", {
+    type: "number",
+    value: "2.8",
+    name: "Price",
+  });
+ */
   quantitySelector.prepend(decrease);
   quantitySelector.append(counter);
   quantitySelector.append(increase);
+  /*   quantitySelector.append(priceCoffee);
+  quantitySelector.append(total); */
 
   let count = 1;
 
   decrease.addEventListener("click", () => {
-    counter.innerHTML = count;
+    counter.value = count;
     count--;
     if (count < 0) {
       count = 0;
@@ -54,11 +72,13 @@ export function quantitySelector() {
 
   increase.addEventListener("click", () => {
     count++;
-    counter.innerHTML = count;
+    counter.value = count;
     if (count === 1) {
       decrease.disabled = false;
     }
   });
+  /* 
+  total.innerHTML = counter * priceCoffee; */
 
   return quantitySelector;
 }
