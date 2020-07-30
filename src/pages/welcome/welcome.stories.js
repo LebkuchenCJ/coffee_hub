@@ -1,6 +1,10 @@
 import "./welcome.css";
-import welcome from "./welcome.html";
+import { welcome } from "./welcome";
 
 export default { title: "Pages/Welcome" };
 
-export const headers = () => welcome;
+export const headers = () => {
+  const welcomeMain = welcome();
+
+  return welcomeMain;
+};
