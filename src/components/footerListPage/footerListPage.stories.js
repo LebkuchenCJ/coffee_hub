@@ -1,6 +1,9 @@
 import "./footerListPage.css";
-import footerListPage from "./footerListPage.html";
+import { footerListPage } from "./footerListPage";
 
 export default { title: "Footer List Page" };
 
-export const pageList = () => footerListPage;
+export const pageList = () => {
+  const pageList = footerListPage();
+  return pageList;
+};
