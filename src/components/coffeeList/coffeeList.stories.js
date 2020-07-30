@@ -1,6 +1,9 @@
-import "./coffeeList.css";
-import coffeeList from "./coffeeList.html";
+import { createList } from "./coffeeList";
 
 export default { title: "Coffee List" };
 
-export const listItem = () => coffeeList;
+export function createCoffeeList() {
+  const list = createList();
+
+  return list;
+}
